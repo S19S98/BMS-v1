@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Log In</title>
+	<style>
+		body{
+			background: lightblue;
+			margin: 0px;
+		}
+		header{
+			background: coral;
+			margin: 0px;
+			color: white;
+			text-align: center;
+			padding: 1px;
+		}
+		.nav{
+			background: darkblue;
+			color: white;
+			margin: 0px;
+		}
+		.nav ul{
+			list-style-type: none;
+			padding: 18px;
+			margin: 0px;
+			margin: 0px;
+			padding-top: 0px;
+		}
+		.nav ul li{
+			display: inline;
+			float: right;
+			padding-right: 15px;
+		
+		}
+		.det{
+			text-align: center;
+			margin: 0px;
+		}
+		.det p{
+			color: grey;
+			font-size: 20px;
+		}
+		.container{
+			background: white;
+			border: solid black 1px;
+			border-radius: 5px;
+			width: 20%;
+			margin-top: 0%;
+			padding: 20px;
+			margin-left: 39%;
+		}
+		img{
+			border-radius: 5px;
+			width: 100%;
+		}
+		.credentials{
+			padding-left: 0px;
+			line-height: 1.8em;
+		}
+		input{
+			width: 100%;
+		}
+		select{
+			width: 100%;
+		}
+		.btn{
+			color: white;
+			text-align: center;
+			padding: 5px;
+		}
+		footer{
+			background: darkblue;
+			color: yellow;
+			padding: 2px;
+			text-align: center;
+			margin-top: 4%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1> Book Management System </h1>
+	</header>
+	<div class="nav">
+		<ul>
+			<li> ABOUT US </li>
+			<li> CONTACT US </li>
+			<li> HOME </li>
+		</ul>
+	</div>
+	<div class="det">
+		<h2> <b> Welcome Back </b> </h2>
+		<p> Log In to stay updated on the professional world. </p>
+	</div>
+	<form action="LoginServlet">
+		<div class="container">
+			<div class = "im">
+				<img src="images/image.jpg">
+			</div>
+			<div class = "credentials">
+				<label> User Name </label> <br>
+				<div class="inp">
+					<input type="text" name="uname" placeholder="Your User name..."><br>
+				</div>
+				<div>
+					<label> Password </label>
+					<input type="password" name="pwd" placeholder="Enter Password...">
+				</div>
+				<div class="btn">
+					<input style="background: blue; color: white; font-size: 15px" type="submit" value="Log In">
+				</div>
+				<div style="text-align: center;">
+					<label> New to BMS? </label>
+					<a href="SignUp.html" style="text-decoration: none;"> Sign Up </a>
+				</div>
+			</div>
+		</div>
+	</form>
+	<footer>
+		Copyright &copy; VISION 2020
+	</footer>
+</body>
+</html>
